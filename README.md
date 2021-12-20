@@ -72,7 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/elk_docker_ps.png)
+![TODO: Update the path with the name of your screenshot of docker ps output](Diagrams/elk_docker_ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -121,7 +121,7 @@ To update the files run the command : nano ansible.cfg  AND nano hosts
         /usr/bin/docker
 #### Check the docker service is running
 - Run <font face="Brush script M1">sudo systemctl status docker</font>
-![Docker status image](Images/Docker_status.jpg)
+![Docker status image](Diagrams/Docker_status.jpg)
 #### If Docker service not running
 - Run <font face="Brush script M1">sudo systemctl start docker</font>
 #### Image format in [hub.docker.com](https://hub.docker.com/)
@@ -132,22 +132,22 @@ To update the files run the command : nano ansible.cfg  AND nano hosts
 - Run <font face="Brush script M1">sudo docker run -ti cyberxsecurity/ansible:latest bash</font>
 #### To list all containers created on the system
 - Run <font face="Brush script M1">sudo docker container list -a</font>
-![Container list image](Images/container_list1.jpg)
+![Container list image](Diagrams/container_list1.jpg)
 #### To start the container
 - Run <font face="Brush script M1">sudo docker start container_name</font>
 #### List all running containers
 - Run <font face="Brush script M1">sudo docker ps</font>
-![Container list image](Images/docker_ps.jpg)
+![Container list image](Diagrams/docker_ps.jpg)
 #### To activate a shell in your container
 - Run <font face="Brush script M1">sudo docker attach container_name</font>
-![Container list image](Images/attach_container.jpg)
+![Container list image](Diagrams/attach_container.jpg)
 #### To check Ansible is installed and running
 - Run <font face="Brush script M1">ansible</font>
-![Container list image](Images/ansible.jpg)
+![Container list image](Diagrams/ansible.jpg)
 #### To generate SSH keys inside ansible container
 - Run  <font face="Brush script M1">ssh-keygen</font>
 #### Copy the public key created in .ssh directory
 - Run <font face="Brush script M1">ls -a</font>
 - Run <font face="Brush script M1">cd .ssh</font>
 - Run <font face="Brush script M1">cat id_rsa.pub</font>
-![Container list image](Images/public_key.jpg)
+![Container list image](Diagrams/public_key.jpg)
