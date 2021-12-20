@@ -151,3 +151,6 @@ To update the files run the command : nano ansible.cfg  AND nano hosts
 - Run <font face="Brush script M1">cd .ssh</font>
 - Run <font face="Brush script M1">cat id_rsa.pub</font>
 ![Container list image](Diagrams/public_key.jpg)
+
+
+
